@@ -38,7 +38,7 @@ app.use(rateLimiter({
   max: 100, //each IP have 100 req per windowMs
 }))
 app.use(helmet())
-app.use(cors())
+// app.use(cors())
 app.use(xss())
 
 app.get('/', (req, res) => {
